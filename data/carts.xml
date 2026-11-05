@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<carts>
+  <cart id="HD001">
+    <id>HD001</id>
+    <created_at>2026-08-05</created_at>
+    <employee_id>EMP02</employee_id>
+    <customer_id>CUS01</customer_id>
+    <status>shipped</status>
+    <payment_method>COD</payment_method>
+    <shipping_address>123 Lê Lợi, Phường Bến Nghé, Quận 1, TP.HCM</shipping_address>
+    <items>
+      <item>
+        <product_id>1</product_id>
+        <color>Đen</color>
+        <size>M</size>
+        <quantity>1</quantity>
+        <unit_price>109.95</unit_price>
+      </item>
+      <item>
+        <product_id>2</product_id>
+        <color>Xanh Navy</color>
+        <size>L</size>
+        <quantity>2</quantity>
+        <unit_price>22.3</unit_price>
+      </item>
+    </items>
+    <total_amount>154.55</total_amount>
+  </cart>
+
+  <cart id="HD002">
+    <id>HD002</id>
+    <created_at>2026-08-14</created_at>
+    <employee_id>EMP03</employee_id>
+    <customer_id>CUS02</customer_id>
+    <status>paid</status>
+    <payment_method>Chuyển khoản ngân hàng</payment_method>
+    <shipping_address>45 Nguyễn Huệ, Phường Bến Nghé, Quận 1, TP.HCM</shipping_address>
+    <items>
+      <item>
+        <product_id>5</product_id>
+        <color>Vàng 18K</color>
+        <size>Size 6</size>
+        <quantity>1</quantity>
+        <unit_price>695</unit_price>
+      </item>
+      <item>
+        <product_id>7</product_id>
+        <color>Bạc Platinum</color>
+        <size>Size 6</size>
+        <quantity>2</quantity>
+        <unit_price>9.99</unit_price>
+      </item>
+    </items>
+    <total_amount>714.98</total_amount>
+  </cart>
+
+  <cart id="HD003">
+    <id>HD003</id>
+    <created_at>2026-08-25</created_at>
+    <employee_id>EMP02</employee_id>
+    <customer_id>CUS03</customer_id>
+    <status>shipped</status>
+    <payment_method>Ví MoMo</payment_method>
+    <shipping_address>669 Quốc lộ 1, Khu phố 3, Thủ Đức, TP.HCM</shipping_address>
+    <items>
+      <item>
+        <product_id>9</product_id>
+        <color>Đen Titan</color>
+        <size>Tiêu chuẩn</size>
+        <quantity>2</quantity>
+        <unit_price>64</unit_price>
+      </item>
+      <item>
+        <product_id>10</product_id>
+        <color>Bạc</color>
+        <size>Tiêu chuẩn</size>
+        <quantity>1</quantity>
+        <unit_price>109</unit_price>
+      </item>
+    </items>
+    <total_amount>237</total_amount>
+  </cart>
+
+  <cart id="HD004">
+    <id>HD004</id>
+    <created_at>2026-09-03</created_at>
+    <employee_id>EMP04</employee_id>
+    <customer_id>CUS04</customer_id>
+    <status>cancelled</status>
+    <payment_method>COD</payment_method>
+    <shipping_address>28 Võ Văn Ngân, Phường Linh Chiểu, Thủ Đức, TP.HCM</shipping_address>
+    <items>
+      <item>
+        <product_id>15</product_id>
+        <color>Đỏ đô</color>
+        <size>M</size>
+        <quantity>1</quantity>
+        <unit_price>56.99</unit_price>
+      </item>
+      <item>
+        <product_id>18</product_id>
+        <color>Kem</color>
+        <size>S</size>
+        <quantity>3</quantity>
+        <unit_price>9.85</unit_price>
+      </item>
+    </items>
+    <total_amount>86.54</total_amount>
+  </cart>
+
+  <cart id="HD005">
+    <id>HD005</id>
+    <created_at>2026-09-12</created_at>
+    <employee_id>EMP01</employee_id>
+    <customer_id>CUS05</customer_id>
+    <status>shipped</status>
+    <payment_method>Thẻ tín dụng</payment_method>
+    <shipping_address>190 Điện Biên Phủ, Quận Bình Thạnh, TP.HCM</shipping_address>
+    <items>
+      <item>
+        <product_id>13</product_id>
+        <color>Đen Titan</color>
+        <size>Tiêu chuẩn</size>
+        <quantity>1</quantity>
+        <unit_price>599</unit_price>
+      </item>
+      <item>
+        <product_id>12</product_id>
+        <color>Xanh Dương</color>
+        <size>Tiêu chuẩn</size>
+        <quantity>1</quantity>
+        <unit_price>114</unit_price>
+      </item>
+    </items>
+    <total_amount>713</total_amount>
+  </cart>
+
+  <cart id="HD006">
+    <id>HD006</id>
+    <created_at>2026-09-21</created_at>
+    <employee_id>EMP03</employee_id>
+    <customer_id>CUS06</customer_id>
+    <status>paid</status>
+    <payment_method>Chuyển khoản ngân hàng</payment_method>
+    <shipping_address>82 Nguyễn Văn Cừ, Quận 5, TP.HCM</shipping_address>
+    <items>
+      <item>
+        <product_id>3</product_id>
+        <color>Đen</color>
+        <size>L</size>
+        <quantity>2</quantity>
+        <unit_price>55.99</unit_price>
+      </item>
+      <item>
+        <product_id>4</product_id>
+        <color>Xám</color>
+        <size>L</size>
+        <quantity>2</quantity>
+        <unit_price>15.99</unit_price>
+      </item>
+    </items>
+    <total_amount>143.96</total_amount>
+  </cart>
+
+  <cart id="HD007">
+    <id>HD007</id>
+    <created_at>2026-09-29</created_at>
+    <employee_id>EMP04</employee_id>
+    <customer_id>CUS07</customer_id>
+    <status>shipped</status>
+    <payment_method>Ví MoMo</payment_method>
+    <shipping_address>15 Cộng Hòa, Phường 4, Quận Tân Bình, TP.HCM</shipping_address>
+    <items>
+      <item>
+        <product_id>16</product_id>
+        <color>Đen</color>
+        <size>M</size>
+        <quantity>2</quantity>
+        <unit_price>29.95</unit_price>
+      </item>
+      <item>
+        <product_id>17</product_id>
+        <color>Đỏ đô</color>
+        <size>L</size>
+        <quantity>1</quantity>
+        <unit_price>39.99</unit_price>
+      </item>
+    </items>
+    <total_amount>99.89</total_amount>
+  </cart>
+
+  <cart id="HD008">
+    <id>HD008</id>
+    <created_at>2026-10-04</created_at>
+    <employee_id>EMP02</employee_id>
+    <customer_id>CUS08</customer_id>
+    <status>shipped</status>
+    <payment_method>Thẻ tín dụng</payment_method>
+    <shipping_address>302 Hai Bà Trưng, Quận 3, TP.HCM</shipping_address>
+    <items>
+      <item>
+        <product_id>14</product_id>
+        <color>Đen Titan</color>
+        <size>Tiêu chuẩn</size>
+        <quantity>1</quantity>
+        <unit_price>999.99</unit_price>
+      </item>
+    </items>
+    <total_amount>999.99</total_amount>
+  </cart>
+
+  <cart id="HD009">
+    <id>HD009</id>
+    <created_at>2026-10-12</created_at>
+    <employee_id>EMP05</employee_id>
+    <customer_id>CUS09</customer_id>
+    <status>paid</status>
+    <payment_method>COD</payment_method>
+    <shipping_address>50 Phan Xích Long, Quận Phú Nhuận, TP.HCM</shipping_address>
+    <items>
+      <item>
+        <product_id>6</product_id>
+        <color>Vàng Hồng</color>
+        <size>Size 6</size>
+        <quantity>1</quantity>
+        <unit_price>168</unit_price>
+      </item>
+      <item>
+        <product_id>8</product_id>
+        <color>Vàng 18K</color>
+        <size>Tiêu chuẩn</size>
+        <quantity>2</quantity>
+        <unit_price>10.99</unit_price>
+      </item>
+    </items>
+    <total_amount>189.98</total_amount>
+  </cart>
+
+  <cart id="HD010">
+    <id>HD010</id>
+    <created_at>2026-10-19</created_at>
+    <employee_id>EMP03</employee_id>
+    <customer_id>CUS10</customer_id>
+    <status>shipped</status>
+    <payment_method>Chuyển khoản ngân hàng</payment_method>
+    <shipping_address>108 Nguyễn Thị Minh Khai, Quận 3, TP.HCM</shipping_address>
+    <items>
+      <item>
+        <product_id>11</product_id>
+        <color>Đen Titan</color>
+        <size>Tiêu chuẩn</size>
+        <quantity>2</quantity>
+        <unit_price>109</unit_price>
+      </item>
+      <item>
+        <product_id>9</product_id>
+        <color>Bạc</color>
+        <size>Tiêu chuẩn</size>
+        <quantity>1</quantity>
+        <unit_price>64</unit_price>
+      </item>
+    </items>
+    <total_amount>282</total_amount>
+  </cart>
+
+  <cart id="HD011">
+    <id>HD011</id>
+    <created_at>2026-10-27</created_at>
+    <employee_id>EMP04</employee_id>
+    <customer_id>CUS01</customer_id>
+    <status>paid</status>
+    <payment_method>Ví MoMo</payment_method>
+    <shipping_address>123 Lê Lợi, Phường Bến Nghé, Quận 1, TP.HCM</shipping_address>
+    <items>
+      <item>
+        <product_id>19</product_id>
+        <color>Đỏ đô</color>
+        <size>M</size>
+        <quantity>3</quantity>
+        <unit_price>7.95</unit_price>
+      </item>
+      <item>
+        <product_id>20</product_id>
+        <color>Đen</color>
+        <size>L</size>
+        <quantity>2</quantity>
+        <unit_price>12.99</unit_price>
+      </item>
+    </items>
+    <total_amount>49.83</total_amount>
+  </cart>
+
+  <cart id="HD012">
+    <id>HD012</id>
+    <created_at>2026-11-01</created_at>
+    <employee_id>EMP01</employee_id>
+    <customer_id>CUS02</customer_id>
+    <status>pending</status>
+    <payment_method>COD</payment_method>
+    <shipping_address>45 Nguyễn Huệ, Phường Bến Nghé, Quận 1, TP.HCM</shipping_address>
+    <items>
+      <item>
+        <product_id>3</product_id>
+        <color>Xanh Navy</color>
+        <size>XL</size>
+        <quantity>1</quantity>
+        <unit_price>55.99</unit_price>
+      </item>
+      <item>
+        <product_id>1</product_id>
+        <color>Xanh Navy</color>
+        <size>L</size>
+        <quantity>1</quantity>
+        <unit_price>109.95</unit_price>
+      </item>
+    </items>
+    <total_amount>165.94</total_amount>
+  </cart>
+
+  <cart id="HD013">
+    <id>HD013</id>
+    <created_at>2026-11-03</created_at>
+    <employee_id>EMP02</employee_id>
+    <customer_id>CUS05</customer_id>
+    <status>pending</status>
+    <payment_method>Chuyển khoản ngân hàng</payment_method>
+    <shipping_address>190 Điện Biên Phủ, Quận Bình Thạnh, TP.HCM</shipping_address>
+    <items>
+      <item>
+        <product_id>12</product_id>
+        <color>Đen Titan</color>
+        <size>Tiêu chuẩn</size>
+        <quantity>2</quantity>
+        <unit_price>114</unit_price>
+      </item>
+    </items>
+    <total_amount>228</total_amount>
+  </cart>
+
+  <cart id="HD014">
+    <id>HD014</id>
+    <created_at>2026-11-04</created_at>
+    <employee_id>EMP05</employee_id>
+    <customer_id>CUS03</customer_id>
+    <status>paid</status>
+    <payment_method>Thẻ tín dụng</payment_method>
+    <shipping_address>669 Quốc lộ 1, Khu phố 3, Thủ Đức, TP.HCM</shipping_address>
+    <items>
+      <item>
+        <product_id>2</product_id>
+        <color>Đen</color>
+        <size>M</size>
+        <quantity>3</quantity>
+        <unit_price>22.3</unit_price>
+      </item>
+      <item>
+        <product_id>6</product_id>
+        <color>Vàng 18K</color>
+        <size>Size 7</size>
+        <quantity>1</quantity>
+        <unit_price>168</unit_price>
+      </item>
+    </items>
+    <total_amount>234.9</total_amount>
+  </cart>
+</carts>

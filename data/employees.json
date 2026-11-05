@@ -1,0 +1,52 @@
+[
+  {
+    "id": "EMP01",
+    "username": "admin",
+    "password": "123",
+    "fullName": "Nguyễn Hoàng Bảo Trân",
+    "email": "trannhb.admin@uelstore.vn",
+    "phone": "0901234567",
+    "role": "admin",
+    "hireDate": "2024-01-15"
+  },
+  {
+    "id": "EMP02",
+    "username": "minhquan",
+    "password": "123",
+    "fullName": "Trần Minh Quân",
+    "email": "quantm.staff@uelstore.vn",
+    "phone": "0912345678",
+    "role": "staff",
+    "hireDate": "2024-03-10"
+  },
+  {
+    "id": "EMP03",
+    "username": "thanhha",
+    "password": "123",
+    "fullName": "Lê Thanh Hà",
+    "email": "halt.staff@uelstore.vn",
+    "phone": "0987654321",
+    "role": "staff",
+    "hireDate": "2024-06-01"
+  },
+  {
+    "id": "EMP04",
+    "username": "hoangnam",
+    "password": "123",
+    "fullName": "Phạm Hoàng Nam",
+    "email": "namph.staff@uelstore.vn",
+    "phone": "0938112233",
+    "role": "staff",
+    "hireDate": "2025-01-20"
+  },
+  {
+    "id": "EMP05",
+    "username": "kimngan",
+    "password": "123",
+    "fullName": "Võ Thị Kim Ngân",
+    "email": "nganvtk.admin@uelstore.vn",
+    "phone": "0977889900",
+    "role": "admin",
+    "hireDate": "2024-02-01"
+  }
+]

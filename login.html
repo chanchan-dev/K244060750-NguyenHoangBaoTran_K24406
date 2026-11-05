@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập Hệ Thống - UEL Store</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="login-body">
+    <div class="login-wrapper">
+        <div class="login-card">
+            <div class="login-header">
+                <a href="index.html" class="login-logo" title="Quay về trang chủ">
+                    <div class="logo-box">U</div>
+                    <span>UEL<span>Store</span></span>
+                </a>
+                <p>Cổng đăng nhập dành cho Quản trị viên, Nhân viên &amp; Khách hàng</p>
+            </div>
+
+            <!-- THÔNG BÁO LỖI / THÀNH CÔNG -->
+            <div id="loginAlert" class="login-alert" role="alert"></div>
+
+            <form id="loginForm" class="login-form" novalidate>
+                <div class="login-field">
+                    <label for="loginUsername">Tên đăng nhập (Username)</label>
+                    <input 
+                        type="text" 
+                        id="loginUsername" 
+                        placeholder="Nhập username..." 
+                        autocomplete="username"
+                        required
+                    />
+                </div>
+
+                <div class="login-field">
+                    <label for="loginPassword">Mật khẩu (Password)</label>
+                    <input 
+                        type="password" 
+                        id="loginPassword" 
+                        placeholder="Nhập mật khẩu..." 
+                        autocomplete="current-password"
+                        required
+                    />
+                </div>
+
+                <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem;">
+                    <label style="display: flex; align-items: center; gap: 6px; cursor: pointer;">
+                        <input type="checkbox" id="rememberMe" checked>
+                        <span>Ghi nhớ đăng nhập</span>
+                    </label>
+                    <a href="index.html" style="color: var(--primary); font-weight: 600;">← Về trang chủ</a>
+                </div>
+
+                <button type="submit" id="btnLoginSubmit" class="btn-login-submit">
+                    🔐 Đăng Nhập
+                </button>
+            </form>
+
+            <!-- HINT TÀI KHOẢN MẪU TRÊN TRANG LOGIN (CÂU 8) -->
+            <div class="demo-accounts-box">
+                <h4>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="16" x2="12" y2="12"></line>
+                        <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                    </svg>
+                    Tài khoản mẫu để kiểm thử (Bấm vào để tự điền):
+                </h4>
+                <div class="demo-account-list">
+                    <div class="demo-pill" data-u="admin" data-p="123" title="Bấm để tự điền Admin">
+                        <span>🛡️ <strong>Admin</strong> (Quản trị hệ thống)</span>
+                        <code>admin / 123</code>
+                    </div>
+                    <div class="demo-pill" data-u="minhquan" data-p="123" title="Bấm để tự điền Staff">
+                        <span>👔 <strong>Staff</strong> (Nhân viên bán hàng)</span>
+                        <code>minhquan / 123</code>
+                    </div>
+                    <div class="demo-pill" data-u="khachhang01" data-p="123" title="Bấm để tự điền Khách hàng">
+                        <span>🛍️ <strong>Khách hàng</strong> (Trang chủ)</span>
+                        <code>khachhang01 / 123</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER BẮT BUỘC: HỌ TÊN + MSSV (CÂU 8) -->
+    <footer class="admin-footer" style="background: rgba(15, 23, 42, 0.7); color: #94a3b8; border-top: 1px solid #334155;">
+        <p>Sinh viên thực hiện: <strong>Nguyễn Hoàng Bảo Trân</strong> | MSSV: <strong>K244060750</strong> | Bài tập thực hành Phát triển Web</p>
+    </footer>
+
+    <!-- SCRIPT XỬ LÝ ĐĂNG NHẬP (CÂU 8) -->
+    <script type="module">
+        import { handleLogin, getCurrentUser } from "./assets/js/auth.js";
+
+        const form = document.getElementById("loginForm");
+        const inputU = document.getElementById("loginUsername");
+        const inputP = document.getElementById("loginPassword");
+        const checkRemember = document.getElementById("rememberMe");
+        const btnSubmit = document.getElementById("btnLoginSubmit");
+        const alertBox = document.getElementById("loginAlert");
+
+        // Bấm vào tài khoản mẫu để tự động điền form
+        document.querySelectorAll(".demo-pill").forEach(pill => {
+            pill.addEventListener("click", () => {
+                inputU.value = pill.getAttribute("data-u");
+                inputP.value = pill.getAttribute("data-p");
+                inputU.classList.remove("is-invalid");
+                inputP.classList.remove("is-invalid");
+                alertBox.className = "login-alert alert-success";
+                alertBox.innerHTML = `✓ Đã tự điền tài khoản: <strong>${inputU.value}</strong>. Hãy nhấn nút Đăng Nhập!`;
+            });
+        });
+
+        // Xử lý gửi Form Đăng Nhập
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const username = inputU.value.trim();
+            const password = inputP.value.trim();
+
+            if (!username) {
+                inputU.classList.add("is-invalid");
+                showAlert("Vui lòng nhập tên đăng nhập!", "error");
+                return;
+            }
+            if (!password) {
+                inputP.classList.add("is-invalid");
+                showAlert("Vui lòng nhập mật khẩu!", "error");
+                return;
+            }
+
+            btnSubmit.disabled = true;
+            btnSubmit.innerHTML = "⏳ Đang kiểm tra thông tin...";
+
+            const res = await handleLogin(username, password, checkRemember.checked);
+
+            if (res.success) {
+                showAlert(res.message + " Đang chuyển hướng...", "success");
+                setTimeout(() => {
+                    window.location.href = res.redirectUrl;
+                }, 800);
+            } else {
+                btnSubmit.disabled = false;
+                btnSubmit.innerHTML = "🔐 Đăng Nhập";
+                inputU.classList.add("is-invalid");
+                inputP.classList.add("is-invalid");
+                showAlert(res.message, "error");
+            }
+        });
+
+        function showAlert(msg, type) {
+            alertBox.className = type === "error" ? "login-alert alert-error" : "login-alert alert-success";
+            alertBox.innerHTML = (type === "error" ? "⚠️ " : "✓ ") + msg;
+        }
+
+        // Tự động chuyển hướng nếu đã đăng nhập từ trước
+        const user = getCurrentUser();
+        if (user) {
+            if (user.role === "admin" || user.role === "staff") {
+                window.location.href = "admin.html";
+            }
+        }
+    </script>
+</body>
+</html>

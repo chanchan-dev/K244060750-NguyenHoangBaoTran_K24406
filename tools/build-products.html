@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câu 1 - Công cụ tạo dữ liệu products.xml từ FakeStoreAPI bằng XML DOM</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --success: #16a34a;
+            --bg: #f8fafc;
+            --card: #ffffff;
+            --text: #0f172a;
+            --muted: #64748b;
+            --border: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.5;
+            padding: 24px;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: var(--card);
+            padding: 20px 24px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            font-size: 1.35rem;
+            color: var(--text);
+        }
+
+        .subtitle {
+            color: var(--muted);
+            font-size: 0.9rem;
+            margin-top: 4px;
+        }
+
+        .actions {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        button {
+            padding: 10px 18px;
+            border-radius: 8px;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 0.92rem;
+            transition: all 0.15s ease;
+        }
+
+        .btn-fetch {
+            background: var(--primary);
+            color: #fff;
+        }
+
+        .btn-fetch:hover {
+            background: var(--primary-hover);
+        }
+
+        .btn-download {
+            background: var(--success);
+            color: #fff;
+        }
+
+        .btn-download:disabled {
+            background: #94a3b8;
+            cursor: not-allowed;
+        }
+
+        .status-bar {
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            color: #1e40af;
+            padding: 12px 16px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 0.92rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 20px;
+        }
+
+        @media (max-width: 960px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .panel {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            max-height: 640px;
+        }
+
+        .panel-header {
+            padding: 12px 16px;
+            background: #f1f5f9;
+            border-bottom: 1px solid var(--border);
+            font-weight: 600;
+            font-size: 0.95rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .panel-body {
+            padding: 16px;
+            overflow: auto;
+            flex: 1;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+        }
+
+        th,
+        td {
+            border-bottom: 1px solid var(--border);
+            padding: 8px 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background: #f8fafc;
+            font-weight: 600;
+            position: sticky;
+            top: 0;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            background: #e2e8f0;
+            margin: 2px;
+        }
+
+        pre {
+            font-family: Consolas, Monaco, monospace;
+            font-size: 0.8rem;
+            white-space: pre-wrap;
+            word-break: break-word;
+            color: #0f172a;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <h1>🛠️ Công cụ khởi tạo <code>products.xml</code> (Câu 1)</h1>
+                <p class="subtitle">Đọc dữ liệu từ <code>https://fakestoreapi.com/products</code> → Dùng XML DOM bổ sung
+                    màu sắc, kích thước, biến thể tồn kho, thương hiệu, giảm giá, ngày nhập</p>
+            </div>
+            <div class="actions">
+                <button id="btnFetch" class="btn-fetch">1. Đọc FakeStoreAPI &amp; Dựng cây XML DOM</button>
+                <button id="btnDownload" class="btn-download" disabled>2. Tải products.xml</button>
+                <button id="btnTestService" class="btn-fetch" style="background:#7c3aed">3. Test dataService.js (F12
+                    Console)</button>
+            </div>
+        </header>
+
+        <div id="statusBar" class="status-bar">
+            <span id="statusText">Sẵn sàng. Nhấn nút "Đọc FakeStoreAPI & Dựng cây XML DOM" hoặc chờ tự động
+                chạy...</span>
+            <span id="productCount">0 sản phẩm</span>
+        </div>
+
+        <div class="grid-2">
+            <div class="panel">
+                <div class="panel-header">
+                    <span>Bảng sản phẩm sau khi làm giàu dữ liệu (Enriched Products)</span>
+                </div>
+                <div class="panel-body">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Tên SP &amp; Thương hiệu</th>
+                                <th>Danh mục</th>
+                                <th>Giá / Giảm</th>
+                                <th>Màu sắc &amp; Size</th>
+                                <th>Tổng tồn kho</th>
+                            </tr>
+                        </thead>
+                        <tbody id="productTableBody">
+                            <tr>
+                                <td colspan="6">Chưa có dữ liệu...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="panel">
+                <div class="panel-header">
+                    <span>Cây tài liệu XML (XMLSerializer Output)</span>
+                </div>
+                <div class="panel-body">
+                    <pre id="xmlPreview">&lt;!-- Kết quả XML DOM sẽ hiển thị tại đây --&gt;</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const COLOR_PALETTES = {
+            "men's clothing": [
+                { name: "Đen", code: "#1e293b" },
+                { name: "Xanh Navy", code: "#1e3a8a" },
+                { name: "Xám", code: "#64748b" },
+                { name: "Trắng", code: "#f8fafc" }
+            ],
+            "women's clothing": [
+                { name: "Đỏ đô", code: "#991b1b" },
+                { name: "Đen", code: "#1e293b" },
+                { name: "Kem", code: "#fef3c7" },
+                { name: "Hồng Pastel", code: "#fbcfe8" }
+            ],
+            "jewelery": [
+                { name: "Vàng 18K", code: "#eab308" },
+                { name: "Bạc Platinum", code: "#cbd5e1" },
+                { name: "Vàng Hồng", code: "#f472b6" }
+            ],
+            "electronics": [
+                { name: "Đen Titan", code: "#0f172a" },
+                { name: "Bạc", code: "#94a3b8" },
+                { name: "Xanh Dương", code: "#2563eb" }
+            ]
+        };
+
+        const BRANDS_BY_CATEGORY = {
+            "men's clothing": ["Uniqlo", "Levi's", "Coolmate", "Routine"],
+            "women's clothing": ["Zara", "H&M", "Mango", "Elise"],
+            "jewelery": ["PNJ", "Swarovski", "Pandora", "Cartier"],
+            "electronics": ["Western Digital", "SanDisk", "Silicon Power", "Acer", "Samsung"]
+        };
+
+        const SIZES_BY_CATEGORY = {
+            "men's clothing": ["S", "M", "L", "XL"],
+            "women's clothing": ["S", "M", "L"],
+            "jewelery": ["Tiêu chuẩn", "Size 6", "Size 7"],
+            "electronics": ["Tiêu chuẩn"]
+        };
+
+        const DISCOUNTS = [0, 5, 10, 15, 20, 25];
+
+        let generatedXmlString = "";
+
+        function createTextElement(xmlDoc, tagName, value) {
+            const el = xmlDoc.createElement(tagName);
+            el.appendChild(xmlDoc.createTextNode(String(value ?? "")));
+            return el;
+        }
+
+        function formatXml(xml) {
+            let formatted = '';
+            const reg = /(>)(<)(\/*)/g;
+            xml = xml.replace(reg, '$1\r\n$2$3');
+            let pad = 0;
+            xml.split('\r\n').forEach((node) => {
+                let indent = 0;
+                if (node.match(/.+<\/\w[^>]*>$/)) {
+                    indent = 0;
+                } else if (node.match(/^<\/\w/)) {
+                    if (pad !== 0) pad -= 1;
+                } else if (node.match(/^<\w[^>]*[^\/]>.*$/)) {
+                    indent = 1;
+                } else {
+                    indent = 0;
+                }
+                formatted += '  '.repeat(pad) + node + '\r\n';
+                pad += indent;
+            });
+            return formatted.trim();
+        }
+
+        async function buildProductsXml() {
+            const statusText = document.getElementById("statusText");
+            const productCount = document.getElementById("productCount");
+            const tbody = document.getElementById("productTableBody");
+            const xmlPreview = document.getElementById("xmlPreview");
+            const btnDownload = document.getElementById("btnDownload");
+
+            try {
+                statusText.textContent = "Đang gọi API https://fakestoreapi.com/products ...";
+                const response = await fetch("https://fakestoreapi.com/products");
+                if (!response.ok) throw new Error("HTTP " + response.status);
+                const apiProducts = await response.json();
+
+                // Khởi tạo tài liệu XML bằng chuẩn W3C XML DOM
+                const xmlDoc = document.implementation.createDocument(null, "products", null);
+                const root = xmlDoc.documentElement;
+                root.setAttribute("generated_at", new Date().toISOString());
+                root.setAttribute("source", "https://fakestoreapi.com/products");
+
+                tbody.innerHTML = "";
+
+                apiProducts.forEach((item, index) => {
+                    const productEl = xmlDoc.createElement("product");
+                    productEl.setAttribute("id", item.id);
+
+                    // Các thuộc tính gốc từ FakeStoreAPI
+                    productEl.appendChild(createTextElement(xmlDoc, "id", item.id));
+                    productEl.appendChild(createTextElement(xmlDoc, "title", item.title));
+                    productEl.appendChild(createTextElement(xmlDoc, "price", item.price));
+                    productEl.appendChild(createTextElement(xmlDoc, "description", item.description));
+                    productEl.appendChild(createTextElement(xmlDoc, "category", item.category));
+                    productEl.appendChild(createTextElement(xmlDoc, "image", item.image));
+
+                    const ratingEl = xmlDoc.createElement("rating");
+                    ratingEl.appendChild(createTextElement(xmlDoc, "rate", item.rating?.rate ?? 4.0));
+                    ratingEl.appendChild(createTextElement(xmlDoc, "count", item.rating?.count ?? 10));
+                    productEl.appendChild(ratingEl);
+
+                    // Các thuộc tính bổ sung (Câu 1)
+                    const cat = item.category || "electronics";
+                    const brandList = BRANDS_BY_CATEGORY[cat] || ["Generic"];
+                    const brand = brandList[index % brandList.length];
+                    const discount = DISCOUNTS[(item.id * 3) % DISCOUNTS.length];
+                    const importDay = String(((item.id * 2) % 25) + 1).padStart(2, "0");
+                    const importMonth = String(((item.id % 3) + 7)).padStart(2, "0");
+                    const importDate = `2026-${importMonth}-${importDay}`;
+
+                    productEl.appendChild(createTextElement(xmlDoc, "brand", brand));
+                    productEl.appendChild(createTextElement(xmlDoc, "discount", discount));
+                    productEl.appendChild(createTextElement(xmlDoc, "import_date", importDate));
+
+                    // Danh sách màu sắc (2-4 màu)
+                    const palette = COLOR_PALETTES[cat] || COLOR_PALETTES["electronics"];
+                    const numColors = (item.id % 2 === 0) ? Math.min(3, palette.length) : Math.min(2, palette.length);
+                    const selectedColors = palette.slice(0, numColors);
+
+                    const colorsEl = xmlDoc.createElement("colors");
+                    selectedColors.forEach(c => {
+                        const colorEl = xmlDoc.createElement("color");
+                        colorEl.setAttribute("code", c.code);
+                        colorEl.appendChild(xmlDoc.createTextNode(c.name));
+                        colorsEl.appendChild(colorEl);
+                    });
+                    productEl.appendChild(colorsEl);
+
+                    // Danh sách size
+                    const sizes = SIZES_BY_CATEGORY[cat] || ["Tiêu chuẩn"];
+                    const sizesEl = xmlDoc.createElement("sizes");
+                    sizes.forEach(s => {
+                        sizesEl.appendChild(createTextElement(xmlDoc, "size", s));
+                    });
+                    productEl.appendChild(sizesEl);
+
+                    // Tồn kho theo từng biến thể (color + size)
+                    const variantsEl = xmlDoc.createElement("variants");
+                    let totalStock = 0;
+                    selectedColors.forEach((c, cIdx) => {
+                        sizes.forEach((s, sIdx) => {
+                            const stockQty = 5 + ((item.id * 7 + cIdx * 5 + sIdx * 3) % 26);
+                            totalStock += stockQty;
+                            const variantEl = xmlDoc.createElement("variant");
+                            variantEl.setAttribute("sku", `SP${String(item.id).padStart(2, "0")}-${cIdx + 1}-${sIdx + 1}`);
+                            variantEl.setAttribute("color", c.name);
+                            variantEl.setAttribute("color_code", c.code);
+                            variantEl.setAttribute("size", s);
+                            variantEl.setAttribute("stock", stockQty);
+                            variantsEl.appendChild(variantEl);
+                        });
+                    });
+                    productEl.appendChild(createTextElement(xmlDoc, "stock", totalStock));
+                    productEl.appendChild(variantsEl);
+
+                    root.appendChild(productEl);
+
+                    // Render dòng lên bảng giao diện
+                    const tr = document.createElement("tr");
+                    tr.innerHTML = `
+                        <td><strong>#${item.id}</strong></td>
+                        <td>
+                            <div><strong>${item.title}</strong></div>
+                            <small style="color:#64748b">Thương hiệu: ${brand} | Nhập: ${importDate}</small>
+                        </td>
+                        <td><span class="badge">${item.category}</span></td>
+                        <td>
+                            <div><strong>$${item.price}</strong></div>
+                            <small style="color:#dc2626">-${discount}%</small>
+                        </td>
+                        <td>
+                            <div>Màu: ${selectedColors.map(c => `<span class="badge">${c.name}</span>`).join("")}</div>
+                            <div>Size: ${sizes.map(s => `<span class="badge">${s}</span>`).join("")}</div>
+                        </td>
+                        <td><strong>${totalStock}</strong> (${selectedColors.length * sizes.length} biến thể)</td>
+                    `;
+                    tbody.appendChild(tr);
+                });
+
+                const serializer = new XMLSerializer();
+                const rawXml = serializer.serializeToString(xmlDoc);
+                generatedXmlString = '<?xml version="1.0" encoding="UTF-8"?>\n' + formatXml(rawXml);
+
+                xmlPreview.textContent = generatedXmlString;
+                statusText.textContent = "✅ Đã dựng thành công cây XML DOM từ FakeStoreAPI và bổ sung đầy đủ thuộc tính!";
+                productCount.textContent = `${apiProducts.length} sản phẩm`;
+                btnDownload.disabled = false;
+            } catch (err) {
+                statusText.textContent = "❌ Lỗi khi tải FakeStoreAPI: " + err.message;
+                console.error(err);
+            }
+        }
+
+        function downloadProductsXml() {
+            if (!generatedXmlString) return;
+            const blob = new Blob([generatedXmlString], { type: "application/xml;charset=utf-8" });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = "products.xml";
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        document.getElementById("btnFetch").addEventListener("click", buildProductsXml);
+        document.getElementById("btnDownload").addEventListener("click", downloadProductsXml);
+
+        document.getElementById("btnTestService").addEventListener("click", async () => {
+            try {
+                const mod = await import("../assets/js/dataService.js");
+                const [products, employees, customers, carts, reviews] = await Promise.all([
+                    mod.loadProducts("../data/products.xml"),
+                    mod.loadEmployees("../data/employees.json"),
+                    mod.loadCustomers("../data/customers.json"),
+                    mod.loadCarts("../data/carts.xml"),
+                    mod.loadReviews("../data/reviews.xml")
+                ]);
+                console.group("=== KẾT QUẢ KIỂM TRA CÂU 1: dataService.js ===");
+                console.log("1. Products (products.xml):", products);
+                console.log("2. Employees (employees.json):", employees);
+                console.log("3. Customers (customers.json):", customers);
+                console.log("4. Carts / Invoices (carts.xml):", carts);
+                console.log("5. Reviews (reviews.xml):", reviews);
+                console.groupEnd();
+                document.getElementById("statusText").textContent =
+                    `✅ Đã đọc thành công: ${products.length} SP, ${employees.length} NV, ${customers.length} KH, ${carts.length} Hóa đơn, ${reviews.length} Đánh giá (Mở F12 -> Console để chụp ảnh!)`;
+            } catch (e) {
+                console.error("Lỗi khi test dataService.js:", e);
+                document.getElementById("statusText").textContent = "❌ Lỗi khi đọc file qua dataService: " + e.message;
+            }
+        });
+
+        // Tự động chạy ngay khi mở trang
+        window.addEventListener("DOMContentLoaded", buildProductsXml);
+    </script>
+
+    <!-- FOOTER BẮT BUỘC: HỌ TÊN + MSSV (YÊU CẦU CHUNG ĐỀ BÀI) -->
+    <footer style="margin-top: 36px; padding: 20px; text-align: center; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.88rem; background: var(--card); border-radius: 12px;">
+        <p>Sinh viên thực hiện: <strong>Nguyễn Hoàng Bảo Trân</strong> | MSSV: <strong>K244060750</strong> | Bài tập thực hành Phát triển Web (Câu 1: Công cụ DOM XML)</p>
+    </footer>
+</body>
+
+</html>

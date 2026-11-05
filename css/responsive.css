@@ -1,0 +1,100 @@
+/* ==========================================================================
+   RESPONSIVE DESIGN (CÂU 3)
+   - Desktop (>= 1024px): 4 cột
+   - Tablet (600px - 1023px): 2 cột
+   - Mobile (< 600px): 1 cột
+   - Layout aside + section linh hoạt
+   ========================================================================== */
+
+/* DESKTOP VIEWPORT (>= 1024px) */
+@media screen and (min-width: 1024px) {
+  .products-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .main-wrapper {
+    flex-direction: row;
+  }
+
+  .filter-aside {
+    width: 310px;
+    display: block;
+  }
+}
+
+/* TABLET VIEWPORT (600px - 1023px) */
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .main-wrapper {
+    flex-direction: column;
+    padding: 16px;
+    gap: 20px;
+  }
+
+  .filter-aside {
+    width: 100%;
+    position: static;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* MOBILE VIEWPORT (< 600px) */
+@media screen and (max-width: 599px) {
+  .header-container {
+    padding: 10px 16px;
+    flex-wrap: wrap;
+  }
+
+  .main-nav {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .nav-links {
+    gap: 14px;
+    font-size: 0.88rem;
+  }
+
+  .main-wrapper {
+    flex-direction: column;
+    padding: 12px;
+    gap: 16px;
+  }
+
+  .filter-aside {
+    width: 100%;
+    position: static;
+    padding: 16px;
+    border-radius: var(--radius-md);
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .section-top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .modal-container {
+    padding: 16px;
+    margin: 10px;
+  }
+}
+

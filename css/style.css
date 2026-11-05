@@ -1,0 +1,70 @@
+/* ==========================================================================
+   STYLE CHÍNH CHO TOÀN BỘ TRANG (CÂU 2, CÂU 3)
+   ========================================================================== */
+@import url('base.css');
+@import url('layout.css');
+@import url('grid.css');
+@import url('skeleton.css');
+@import url('responsive.css');
+
+/* TIỆN ÍCH MODAL QUICK-VIEW CONTENT */
+.modal-product-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 28px;
+  padding: 30px;
+}
+
+@media (max-width: 768px) {
+  .modal-product-layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+}
+
+.modal-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  padding: 24px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  max-height: 380px;
+}
+
+.modal-img-container img {
+  max-height: 320px;
+  object-fit: contain;
+}
+
+.modal-details {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.modal-details .modal-title {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--secondary);
+  line-height: 1.35;
+}
+
+.modal-details .modal-desc {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.modal-stock-info {
+  background: #f8fafc;
+  border: 1px solid var(--border-color);
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  font-size: 0.88rem;
+  display: flex;
+  justify-content: space-between;
+}
+

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reviews>
+  <review id="REV001">
+    <review_id>REV001</review_id>
+    <product_id>1</product_id>
+    <customer_id>CUS01</customer_id>
+    <rating>5</rating>
+    <comment>Balo rất chắc chắn, đựng vừa laptop 15.6 inch và chống thấm nước nhẹ rất tốt.</comment>
+    <date>2026-08-10</date>
+  </review>
+  <review id="REV002">
+    <review_id>REV002</review_id>
+    <product_id>1</product_id>
+    <customer_id>CUS02</customer_id>
+    <rating>4</rating>
+    <comment>Màu Xanh Navy ngoài đời đẹp hơn trong ảnh, đường may tỉ mỉ, giao hàng nhanh.</comment>
+    <date>2026-08-15</date>
+  </review>
+  <review id="REV003">
+    <review_id>REV003</review_id>
+    <product_id>1</product_id>
+    <customer_id>CUS05</customer_id>
+    <rating>5</rating>
+    <comment>Đeo đi học cả ngày không bị đau vai, rất đáng đồng tiền bát gạo!</comment>
+    <date>2026-09-01</date>
+  </review>
+  <review id="REV004">
+    <review_id>REV004</review_id>
+    <product_id>2</product_id>
+    <customer_id>CUS01</customer_id>
+    <rating>4</rating>
+    <comment>Áo thun form slim fit mặc lên vừa vặn, vải thoáng mát dễ chịu.</comment>
+    <date>2026-08-12</date>
+  </review>
+  <review id="REV005">
+    <review_id>REV005</review_id>
+    <product_id>2</product_id>
+    <customer_id>CUS03</customer_id>
+    <rating>5</rating>
+    <comment>Chất vải mềm mịn, giặt máy không bị xù lông hay giãn cổ áo.</comment>
+    <date>2026-08-28</date>
+  </review>
+  <review id="REV006">
+    <review_id>REV006</review_id>
+    <product_id>2</product_id>
+    <customer_id>CUS07</customer_id>
+    <rating>4</rating>
+    <comment>Màu xám phối tay raglan rất trẻ trung, sẽ ủng hộ shop thêm.</comment>
+    <date>2026-09-14</date>
+  </review>
+  <review id="REV007">
+    <review_id>REV007</review_id>
+    <product_id>3</product_id>
+    <customer_id>CUS02</customer_id>
+    <rating>5</rating>
+    <comment>Áo khoác kaki dày dặn, chắn gió tốt khi đi Đà Lạt hoặc đi phượt.</comment>
+    <date>2026-09-05</date>
+  </review>
+  <review id="REV008">
+    <review_id>REV008</review_id>
+    <product_id>3</product_id>
+    <customer_id>CUS06</customer_id>
+    <rating>5</rating>
+    <comment>Form áo chuẩn, màu đen nam tính, khóa kéo mượt và chắc chắn.</comment>
+    <date>2026-09-25</date>
+  </review>
+  <review id="REV009">
+    <review_id>REV009</review_id>
+    <product_id>3</product_id>
+    <customer_id>CUS09</customer_id>
+    <rating>4</rating>
+    <comment>Áo đẹp nhưng hơi dày nếu mặc buổi trưa ở Sài Gòn, hợp trời thu đông.</comment>
+    <date>2026-10-02</date>
+  </review>
+  <review id="REV010">
+    <review_id>REV010</review_id>
+    <product_id>4</product_id>
+    <customer_id>CUS04</customer_id>
+    <rating>3</rating>
+    <comment>Áo ôm sát body nên bạn nào thích mặc rộng nhớ chọn tăng 1 size nhé.</comment>
+    <date>2026-09-10</date>
+  </review>
+  <review id="REV011">
+    <review_id>REV011</review_id>
+    <product_id>4</product_id>
+    <customer_id>CUS06</customer_id>
+    <rating>4</rating>
+    <comment>Giá rẻ, chất lượng ổn trong tầm giá để mặc lót bên trong.</comment>
+    <date>2026-09-26</date>
+  </review>
+  <review id="REV012">
+    <review_id>REV012</review_id>
+    <product_id>5</product_id>
+    <customer_id>CUS02</customer_id>
+    <rating>5</rating>
+    <comment>Vòng tay chạm khắc rồng cực kỳ tinh xảo, hộp đựng sang trọng.</comment>
+    <date>2026-08-19</date>
+  </review>
+  <review id="REV013">
+    <review_id>REV013</review_id>
+    <product_id>5</product_id>
+    <customer_id>CUS08</customer_id>
+    <rating>5</rating>
+    <comment>Mua làm quà tặng sinh nhật mẹ, mẹ mình rất thích vì độ sáng bóng cao.</comment>
+    <date>2026-09-19</date>
+  </review>
+  <review id="REV014">
+    <review_id>REV014</review_id>
+    <product_id>6</product_id>
+    <customer_id>CUS03</customer_id>
+    <rating>4</rating>
+    <comment>Nhẫn mảnh nhẹ nhàng, đính đá lấp lánh, đeo hàng ngày rất xinh.</comment>
+    <date>2026-10-05</date>
+  </review>
+  <review id="REV015">
+    <review_id>REV015</review_id>
+    <product_id>6</product_id>
+    <customer_id>CUS09</customer_id>
+    <rating>5</rating>
+    <comment>Màu vàng hồng tôn da, size 6 vừa khít ngón áp út.</comment>
+    <date>2026-10-15</date>
+  </review>
+  <review id="REV016">
+    <review_id>REV016</review_id>
+    <product_id>7</product_id>
+    <customer_id>CUS02</customer_id>
+    <rating>4</rating>
+    <comment>Thiết kế cổ điển thanh lịch, mức giá quá hợp lý cho một chiếc nhẫn thời trang.</comment>
+    <date>2026-08-21</date>
+  </review>
+  <review id="REV017">
+    <review_id>REV017</review_id>
+    <product_id>7</product_id>
+    <customer_id>CUS10</customer_id>
+    <rating>3</rating>
+    <comment>Đá sáng đẹp nhưng cần hạn chế tiếp xúc hóa chất để giữ màu bền hơn.</comment>
+    <date>2026-10-08</date>
+  </review>
+  <review id="REV018">
+    <review_id>REV018</review_id>
+    <product_id>8</product_id>
+    <customer_id>CUS04</customer_id>
+    <rating>3</rating>
+    <comment>Khuyên tai thép không gỉ chắc chắn, kiểu dáng cá tính.</comment>
+    <date>2026-09-18</date>
+  </review>
+  <review id="REV019">
+    <review_id>REV019</review_id>
+    <product_id>8</product_id>
+    <customer_id>CUS09</customer_id>
+    <rating>4</rating>
+    <comment>Đóng gói cẩn thận, đeo không bị kích ứng tai.</comment>
+    <date>2026-10-16</date>
+  </review>
+  <review id="REV020">
+    <review_id>REV020</review_id>
+    <product_id>9</product_id>
+    <customer_id>CUS03</customer_id>
+    <rating>5</rating>
+    <comment>Ổ cứng WD 2TB chép dữ liệu qua cổng USB 3.0 rất nhanh, nhỏ gọn bỏ túi tiện lợi.</comment>
+    <date>2026-08-30</date>
+  </review>
+  <review id="REV021">
+    <review_id>REV021</review_id>
+    <product_id>9</product_id>
+    <customer_id>CUS10</customer_id>
+    <rating>4</rating>
+    <comment>Cắm vào Windows 11 nhận ngay, chạy êm không bị nóng.</comment>
+    <date>2026-10-22</date>
+  </review>
+  <review id="REV022">
+    <review_id>REV022</review_id>
+    <product_id>10</product_id>
+    <customer_id>CUS03</customer_id>
+    <rating>5</rating>
+    <comment>Nâng cấp SSD SanDisk xong laptop khởi động Windows chỉ mất 8 giây!</comment>
+    <date>2026-09-02</date>
+  </review>
+  <review id="REV023">
+    <review_id>REV023</review_id>
+    <product_id>10</product_id>
+    <customer_id>CUS07</customer_id>
+    <rating>4</rating>
+    <comment>Hàng chính hãng nguyên seal, tốc độ đọc ghi ổn định.</comment>
+    <date>2026-09-28</date>
+  </review>
+  <review id="REV024">
+    <review_id>REV024</review_id>
+    <product_id>11</product_id>
+    <customer_id>CUS05</customer_id>
+    <rating>5</rating>
+    <comment>SSD 256GB giá mềm mà hiệu năng vượt mong đợi, rất hợp nâng cấp máy văn phòng.</comment>
+    <date>2026-10-01</date>
+  </review>
+  <review id="REV025">
+    <review_id>REV025</review_id>
+    <product_id>11</product_id>
+    <customer_id>CUS10</customer_id>
+    <rating>5</rating>
+    <comment>Shop tư vấn nhiệt tình, giao nhanh trong ngày tại TP.HCM.</comment>
+    <date>2026-10-23</date>
+  </review>
+  <review id="REV026">
+    <review_id>REV026</review_id>
+    <product_id>12</product_id>
+    <customer_id>CUS05</customer_id>
+    <rating>5</rating>
+    <comment>Dung lượng 4TB tha hồ cài game PS4 và lưu video 4K mà không lo đầy ổ.</comment>
+    <date>2026-09-16</date>
+  </review>
+  <review id="REV027">
+    <review_id>REV027</review_id>
+    <product_id>13</product_id>
+    <customer_id>CUS05</customer_id>
+    <rating>4</rating>
+    <comment>Màn hình Acer IPS góc nhìn rộng, viền mỏng đẹp, tần số quét 75Hz mượt.</comment>
+    <date>2026-09-17</date>
+  </review>
+  <review id="REV028">
+    <review_id>REV028</review_id>
+    <product_id>13</product_id>
+    <customer_id>CUS08</customer_id>
+    <rating>4</rating>
+    <comment>Màu sắc hiển thị chuẩn để làm việc văn phòng và chỉnh ảnh cơ bản.</comment>
+    <date>2026-10-06</date>
+  </review>
+  <review id="REV029">
+    <review_id>REV029</review_id>
+    <product_id>14</product_id>
+    <customer_id>CUS08</customer_id>
+    <rating>5</rating>
+    <comment>Màn hình cong 49 inch siêu rộng cực đỉnh, vừa code vừa mở tài liệu không cần 2 màn hình.</comment>
+    <date>2026-10-09</date>
+  </review>
+  <review id="REV030">
+    <review_id>REV030</review_id>
+    <product_id>15</product_id>
+    <customer_id>CUS04</customer_id>
+    <rating>4</rating>
+    <comment>Áo khoác 3 trong 1 có lớp lót nỉ tháo rời rất tiện, giữ ấm cực tốt.</comment>
+    <date>2026-09-08</date>
+  </review>
+  <review id="REV031">
+    <review_id>REV031</review_id>
+    <product_id>16</product_id>
+    <customer_id>CUS06</customer_id>
+    <rating>5</rating>
+    <comment>Áo khoác da biker lên form cực ngầu, mũ nỉ có thể tháo rời linh hoạt.</comment>
+    <date>2026-09-30</date>
+  </review>
+  <review id="REV032">
+    <review_id>REV032</review_id>
+    <product_id>16</product_id>
+    <customer_id>CUS07</customer_id>
+    <rating>4</rating>
+    <comment>Da mềm, không có mùi khó chịu, đường chỉ may chắc chắn.</comment>
+    <date>2026-10-03</date>
+  </review>
+  <review id="REV033">
+    <review_id>REV033</review_id>
+    <product_id>17</product_id>
+    <customer_id>CUS07</customer_id>
+    <rating>5</rating>
+    <comment>Áo khoác gió chống mưa nhẹ hiệu quả, họa tiết kẻ sọc bên trong rất thời trang.</comment>
+    <date>2026-10-04</date>
+  </review>
+  <review id="REV034">
+    <review_id>REV034</review_id>
+    <product_id>18</product_id>
+    <customer_id>CUS04</customer_id>
+    <rating>5</rating>
+    <comment>Áo thun cổ thuyền chất rayon co giãn 4 chiều, mặc mát rượi.</comment>
+    <date>2026-09-12</date>
+  </review>
+  <review id="REV035">
+    <review_id>REV035</review_id>
+    <product_id>19</product_id>
+    <customer_id>CUS01</customer_id>
+    <rating>5</rating>
+    <comment>Áo thể thao thấm hút mồ hôi nhanh, tập gym hay chạy bộ đều tuyệt vời.</comment>
+    <date>2026-10-29</date>
+  </review>
+  <review id="REV036">
+    <review_id>REV036</review_id>
+    <product_id>20</product_id>
+    <customer_id>CUS01</customer_id>
+    <rating>4</rating>
+    <comment>Áo phông cotton in chữ trẻ trung, dễ phối với quần jean hoặc chân váy.</comment>
+    <date>2026-10-30</date>
+  </review>
+</reviews>

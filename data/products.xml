@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products generated_at="2026-11-05T06:30:00.000Z" source="https://fakestoreapi.com/products">
+  <product id="1">
+    <id>1</id>
+    <title>Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</title>
+    <price>109.95</price>
+    <description>Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday</description>
+    <category>men's clothing</category>
+    <image>https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png</image>
+    <rating>
+      <rate>3.9</rate>
+      <count>120</count>
+    </rating>
+    <brand>Uniqlo</brand>
+    <discount>15</discount>
+    <import_date>2026-08-03</import_date>
+    <colors>
+      <color code="#1e293b">Đen</color>
+      <color code="#1e3a8a">Xanh Navy</color>
+    </colors>
+    <sizes>
+      <size>S</size>
+      <size>M</size>
+      <size>L</size>
+      <size>XL</size>
+    </sizes>
+    <stock>132</stock>
+    <variants>
+      <variant sku="SP01-1-1" color="Đen" color_code="#1e293b" size="S" stock="12"/>
+      <variant sku="SP01-1-2" color="Đen" color_code="#1e293b" size="M" stock="15"/>
+      <variant sku="SP01-1-3" color="Đen" color_code="#1e293b" size="L" stock="18"/>
+      <variant sku="SP01-1-4" color="Đen" color_code="#1e293b" size="XL" stock="21"/>
+      <variant sku="SP01-2-1" color="Xanh Navy" color_code="#1e3a8a" size="S" stock="17"/>
+      <variant sku="SP01-2-2" color="Xanh Navy" color_code="#1e3a8a" size="M" stock="20"/>
+      <variant sku="SP01-2-3" color="Xanh Navy" color_code="#1e3a8a" size="L" stock="23"/>
+      <variant sku="SP01-2-4" color="Xanh Navy" color_code="#1e3a8a" size="XL" stock="6"/>
+    </variants>
+  </product>
+  <product id="2">
+    <id>2</id>
+    <title>Mens Casual Premium Slim Fit T-Shirts</title>
+    <price>22.3</price>
+    <description>Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight &amp; soft fabric for breathable and comfortable wearing.</description>
+    <category>men's clothing</category>
+    <image>https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png</image>
+    <rating>
+      <rate>4.1</rate>
+      <count>259</count>
+    </rating>
+    <brand>Levi's</brand>
+    <discount>0</discount>
+    <import_date>2026-09-05</import_date>
+    <colors>
+      <color code="#1e293b">Đen</color>
+      <color code="#1e3a8a">Xanh Navy</color>
+      <color code="#64748b">Xám</color>
+    </colors>
+    <sizes>
+      <size>S</size>
+      <size>M</size>
+      <size>L</size>
+      <size>XL</size>
+    </sizes>
+    <stock>210</stock>
+    <variants>
+      <variant sku="SP02-1-1" color="Đen" color_code="#1e293b" size="S" stock="19"/>
+      <variant sku="SP02-1-2" color="Đen" color_code="#1e293b" size="M" stock="22"/>
+      <variant sku="SP02-1-3" color="Đen" color_code="#1e293b" size="L" stock="25"/>
+      <variant sku="SP02-1-4" color="Đen" color_code="#1e293b" size="XL" stock="28"/>
+      <variant sku="SP02-2-1" color="Xanh Navy" color_code="#1e3a8a" size="S" stock="24"/>
+      <variant sku="SP02-2-2" color="Xanh Navy" color_code="#1e3a8a" size="M" stock="27"/>
+      <variant sku="SP02-2-3" color="Xanh Navy" color_code="#1e3a8a" size="L" stock="30"/>
+      <variant sku="SP02-2-4" color="Xanh Navy" color_code="#1e3a8a" size="XL" stock="7"/>
+      <variant sku="SP02-3-1" color="Xám" color_code="#64748b" size="S" stock="5"/>
+      <variant sku="SP02-3-2" color="Xám" color_code="#64748b" size="M" stock="8"/>
+      <variant sku="SP02-3-3" color="Xám" color_code="#64748b" size="L" stock="11"/>
+      <variant sku="SP02-3-4" color="Xám" color_code="#64748b" size="XL" stock="4"/>
+    </variants>
+  </product>
+  <product id="3">
+    <id>3</id>
+    <title>Mens Cotton Jacket</title>
+    <price>55.99</price>
+    <description>Great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors.</description>
+    <category>men's clothing</category>
+    <image>https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_t.png</image>
+    <rating>
+      <rate>4.7</rate>
+      <count>500</count>
+    </rating>
+    <brand>Coolmate</brand>
+    <discount>15</discount>
+    <import_date>2026-07-07</import_date>
+    <colors>
+      <color code="#1e293b">Đen</color>
+      <color code="#1e3a8a">Xanh Navy</color>
+    </colors>
+    <sizes>
+      <size>S</size>
+      <size>M</size>
+      <size>L</size>
+      <size>XL</size>
+    </sizes>
+    <stock>136</stock>
+    <variants>
+      <variant sku="SP03-1-1" color="Đen" color_code="#1e293b" size="S" stock="26"/>
+      <variant sku="SP03-1-2" color="Đen" color_code="#1e293b" size="M" stock="29"/>
+      <variant sku="SP03-1-3" color="Đen" color_code="#1e293b" size="L" stock="6"/>
+      <variant sku="SP03-1-4" color="Đen" color_code="#1e293b" size="XL" stock="9"/>
+      <variant sku="SP03-2-1" color="Xanh Navy" color_code="#1e3a8a" size="S" stock="12"/>
+      <variant sku="SP03-2-2" color="Xanh Navy" color_code="#1e3a8a" size="M" stock="15"/>
+      <variant sku="SP03-2-3" color="Xanh Navy" color_code="#1e3a8a" size="L" stock="18"/>
+      <variant sku="SP03-2-4" color="Xanh Navy" color_code="#1e3a8a" size="XL" stock="21"/>
+    </variants>
+  </product>
+  <product id="4">
+    <id>4</id>
+    <title>Mens Casual Slim Fit</title>
+    <price>15.99</price>
+    <description>The color could be slightly different between on the screen and in practice. Please note that body builds vary by person, therefore, detailed size information should be reviewed.</description>
+    <category>men's clothing</category>
+    <image>https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_t.png</image>
+    <rating>
+      <rate>2.1</rate>
+      <count>430</count>
+    </rating>
+    <brand>Routine</brand>
+    <discount>0</discount>
+    <import_date>2026-08-09</import_date>
+    <colors>
+      <color code="#1e293b">Đen</color>
+      <color code="#1e3a8a">Xanh Navy</color>
+      <color code="#64748b">Xám</color>
+    </colors>
+    <sizes>
+      <size>S</size>
+      <size>M</size>
+      <size>L</size>
+      <size>XL</size>
+    </sizes>
+    <stock>198</stock>
+    <variants>
+      <variant sku="SP04-1-1" color="Đen" color_code="#1e293b" size="S" stock="7"/>
+      <variant sku="SP04-1-2" color="Đen" color_code="#1e293b" size="M" stock="10"/>
+      <variant sku="SP04-1-3" color="Đen" color_code="#1e293b" size="L" stock="13"/>
+      <variant sku="SP04-1-4" color="Đen" color_code="#1e293b" size="XL" stock="16"/>
+      <variant sku="SP04-2-1" color="Xanh Navy" color_code="#1e3a8a" size="S" stock="12"/>
+      <variant sku="SP04-2-2" color="Xanh Navy" color_code="#1e3a8a" size="M" stock="15"/>
+      <variant sku="SP04-2-3" color="Xanh Navy" color_code="#1e3a8a" size="L" stock="18"/>
+      <variant sku="SP04-2-4" color="Xanh Navy" color_code="#1e3a8a" size="XL" stock="21"/>
+      <variant sku="SP04-3-1" color="Xám" color_code="#64748b" size="S" stock="17"/>
+      <variant sku="SP04-3-2" color="Xám" color_code="#64748b" size="M" stock="20"/>
+      <variant sku="SP04-3-3" color="Xám" color_code="#64748b" size="L" stock="23"/>
+      <variant sku="SP04-3-4" color="Xám" color_code="#64748b" size="XL" stock="26"/>
+    </variants>
+  </product>
+  <product id="5">
+    <id>5</id>
+    <title>John Hardy Women's Legends Naga Gold &amp; Silver Dragon Station Chain Bracelet</title>
+    <price>695</price>
+    <description>From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance.</description>
+    <category>jewelery</category>
+    <image>https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_t.png</image>
+    <rating>
+      <rate>4.6</rate>
+      <count>400</count>
+    </rating>
+    <brand>PNJ</brand>
+    <discount>15</discount>
+    <import_date>2026-09-11</import_date>
+    <colors>
+      <color code="#eab308">Vàng 18K</color>
+      <color code="#cbd5e1">Bạc Platinum</color>
+    </colors>
+    <sizes>
+      <size>Tiêu chuẩn</size>
+      <size>Size 6</size>
+      <size>Size 7</size>
+    </sizes>
+    <stock>117</stock>
+    <variants>
+      <variant sku="SP05-1-1" color="Vàng 18K" color_code="#eab308" size="Tiêu chuẩn" stock="14"/>
+      <variant sku="SP05-1-2" color="Vàng 18K" color_code="#eab308" size="Size 6" stock="17"/>
+      <variant sku="SP05-1-3" color="Vàng 18K" color_code="#eab308" size="Size 7" stock="20"/>
+      <variant sku="SP05-2-1" color="Bạc Platinum" color_code="#cbd5e1" size="Tiêu chuẩn" stock="19"/>
+      <variant sku="SP05-2-2" color="Bạc Platinum" color_code="#cbd5e1" size="Size 6" stock="22"/>
+      <variant sku="SP05-2-3" color="Bạc Platinum" color_code="#cbd5e1" size="Size 7" stock="25"/>
+    </variants>
+  </product>
+  <product id="6">
+    <id>6</id>
+    <title>Solid Gold Petite Micropave</title>
+    <price>168</price>
+    <description>Satisfaction Guaranteed. Return or exchange any order within 30 days. Designed and sold by Hafeez Center in the United States.</description>
+    <category>jewelery</category>
+    <image>https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_t.png</image>
+    <rating>
+      <rate>3.9</rate>
+      <count>70</count>
+    </rating>
+    <brand>Swarovski</brand>
+    <discount>0</discount>
+    <import_date>2026-07-13</import_date>
+    <colors>
+      <color code="#eab308">Vàng 18K</color>
+      <color code="#cbd5e1">Bạc Platinum</color>
+      <color code="#f472b6">Vàng Hồng</color>
+    </colors>
+    <sizes>
+      <size>Tiêu chuẩn</size>
+      <size>Size 6</size>
+      <size>Size 7</size>
+    </sizes>
+    <stock>159</stock>
+    <variants>
+      <variant sku="SP06-1-1" color="Vàng 18K" color_code="#eab308" size="Tiêu chuẩn" stock="21"/>
+      <variant sku="SP06-1-2" color="Vàng 18K" color_code="#eab308" size="Size 6" stock="24"/>
+      <variant sku="SP06-1-3" color="Vàng 18K" color_code="#eab308" size="Size 7" stock="27"/>
+      <variant sku="SP06-2-1" color="Bạc Platinum" color_code="#cbd5e1" size="Tiêu chuẩn" stock="26"/>
+      <variant sku="SP06-2-2" color="Bạc Platinum" color_code="#cbd5e1" size="Size 6" stock="29"/>
+      <variant sku="SP06-2-3" color="Bạc Platinum" color_code="#cbd5e1" size="Size 7" stock="6"/>
+      <variant sku="SP06-3-1" color="Vàng Hồng" color_code="#f472b6" size="Tiêu chuẩn" stock="5"/>
+      <variant sku="SP06-3-2" color="Vàng Hồng" color_code="#f472b6" size="Size 6" stock="8"/>
+      <variant sku="SP06-3-3" color="Vàng Hồng" color_code="#f472b6" size="Size 7" stock="13"/>
+    </variants>
+  </product>
+  <product id="7">
+    <id>7</id>
+    <title>White Gold Plated Princess</title>
+    <price>9.99</price>
+    <description>Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day.</description>
+    <category>jewelery</category>
+    <image>https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_t.png</image>
+    <rating>
+      <rate>3.0</rate>
+      <count>400</count>
+    </rating>
+    <brand>Pandora</brand>
+    <discount>15</discount>
+    <import_date>2026-08-15</import_date>
+    <colors>
+      <color code="#eab308">Vàng 18K</color>
+      <color code="#cbd5e1">Bạc Platinum</color>
+    </colors>
+    <sizes>
+      <size>Tiêu chuẩn</size>
+      <size>Size 6</size>
+      <size>Size 7</size>
+    </sizes>
+    <stock>102</stock>
+    <variants>
+      <variant sku="SP07-1-1" color="Vàng 18K" color_code="#eab308" size="Tiêu chuẩn" stock="28"/>
+      <variant sku="SP07-1-2" color="Vàng 18K" color_code="#eab308" size="Size 6" stock="5"/>
+      <variant sku="SP07-1-3" color="Vàng 18K" color_code="#eab308" size="Size 7" stock="8"/>
+      <variant sku="SP07-2-1" color="Bạc Platinum" color_code="#cbd5e1" size="Tiêu chuẩn" stock="17"/>
+      <variant sku="SP07-2-2" color="Bạc Platinum" color_code="#cbd5e1" size="Size 6" stock="20"/>
+      <variant sku="SP07-2-3" color="Bạc Platinum" color_code="#cbd5e1" size="Size 7" stock="24"/>
+    </variants>
+  </product>
+  <product id="8">
+    <id>8</id>
+    <title>Pierced Owl Rose Gold Plated Stainless Steel Double</title>
+    <price>10.99</price>
+    <description>Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel</description>
+    <category>jewelery</category>
+    <image>https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_t.png</image>
+    <rating>
+      <rate>1.9</rate>
+      <count>100</count>
+    </rating>
+    <brand>Cartier</brand>
+    <discount>0</discount>
+    <import_date>2026-09-17</import_date>
+    <colors>
+      <color code="#eab308">Vàng 18K</color>
+      <color code="#cbd5e1">Bạc Platinum</color>
+      <color code="#f472b6">Vàng Hồng</color>
+    </colors>
+    <sizes>
+      <size>Tiêu chuẩn</size>
+      <size>Size 6</size>
+      <size>Size 7</size>
+    </sizes>
+    <stock>162</stock>
+    <variants>
+      <variant sku="SP08-1-1" color="Vàng 18K" color_code="#eab308" size="Tiêu chuẩn" stock="9"/>
+      <variant sku="SP08-1-2" color="Vàng 18K" color_code="#eab308" size="Size 6" stock="12"/>
+      <variant sku="SP08-1-3" color="Vàng 18K" color_code="#eab308" size="Size 7" stock="15"/>
+      <variant sku="SP08-2-1" color="Bạc Platinum" color_code="#cbd5e1" size="Tiêu chuẩn" stock="14"/>
+      <variant sku="SP08-2-2" color="Bạc Platinum" color_code="#cbd5e1" size="Size 6" stock="17"/>
+      <variant sku="SP08-2-3" color="Bạc Platinum" color_code="#cbd5e1" size="Size 7" stock="20"/>
+      <variant sku="SP08-3-1" color="Vàng Hồng" color_code="#f472b6" size="Tiêu chuẩn" stock="22"/>
+      <variant sku="SP08-3-2" color="Vàng Hồng" color_code="#f472b6" size="Size 6" stock="25"/>
+      <variant sku="SP08-3-3" color="Vàng Hồng" color_code="#f472b6" size="Size 7" stock="28"/>
+    </variants>
+  </product>
+  <product id="9">
+    <id>9</id>
+    <title>WD 2TB Elements Portable External Hard Drive - USB 3.0</title>
+    <price>64</price>
+    <description>USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High Capacity; Compatibility Formatted NTFS for Windows 10, Windows 8.1, Windows 7.</description>
+    <category>electronics</category>
+    <image>https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_t.png</image>
+    <rating>
+      <rate>3.3</rate>
+      <count>203</count>
+    </rating>
+    <brand>Acer</brand>
+    <discount>15</discount>
+    <import_date>2026-07-19</import_date>
+    <colors>
+      <color code="#0f172a">Đen Titan</color>
+      <color code="#94a3b8">Bạc</color>
+    </colors>
+    <sizes>
+      <size>Tiêu chuẩn</size>
+    </sizes>
+    <stock>37</stock>
+    <variants>
+      <variant sku="SP09-1-1" color="Đen Titan" color_code="#0f172a" size="Tiêu chuẩn" stock="16"/>
+      <variant sku="SP09-2-1" color="Bạc" color_code="#94a3b8" size="Tiêu chuẩn" stock="21"/>
+    </variants>
+  </product>
+  <product id="10">
+    <id>10</id>
+    <title>SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s</title>
+    <price>109</price>
+    <description>Easy upgrade for faster boot up, shutdown, application load and response. Boosts burst write performance, making it ideal for typical PC workloads.</description>
+    <category>electronics</category>
+    <image>https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_t.png</image>
+    <rating>
+      <rate>2.9</rate>
+      <count>470</count>
+    </rating>
+    <brand>Samsung</brand>
+    <discount>0</discount>
+    <import_date>2026-08-21</import_date>
+    <colors>
+      <color code="#0f172a">Đen Titan</color>
+      <color code="#94a3b8">Bạc</color>
+      <color code="#2563eb">Xanh Dương</color>
+    </colors>
+    <sizes>
+      <size>Tiêu chuẩn</size>
+    </sizes>
+    <stock>59</stock>
+    <variants>
+      <variant sku="SP10-1-1" color="Đen Titan" color_code="#0f172a" size="Tiêu chuẩn" stock="23"/>
+      <variant sku="SP10-2-1" color="Bạc" color_code="#94a3b8" size="Tiêu chuẩn" stock="28"/>
+      <variant sku="SP10-3-1" color="Xanh Dương" color_code="#2563eb" size="Tiêu chuẩn" stock="8"/>
+    </variants>
+  </product>
+  <product id="11">
+    <id>11</id>
+    <title>Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5</title>
+    <price>109</price>
+    <description>3D NAND flash are applied to deliver high transfer speeds Remarkable transfer speeds that enable faster bootup and improved overall system performance.</description>
+    <category>electronics</category>
+    <image>https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_t.png</image>
+    <rating>
+      <rate>4.8</rate>
+      <count>319</count>
+    </rating>
+    <brand>Western Digital</brand>
+    <discount>15</discount>
+    <import_date>2026-09-23</import_date>
+    <colors>
+      <color code="#0f172a">Đen Titan</color>
+      <color code="#94a3b8">Bạc</color>
+    </colors>
+    <sizes>
+      <size>Tiêu chuẩn</size>
+    </sizes>
+    <stock>39</stock>
+    <variants>
+      <variant sku="SP11-1-1" color="Đen Titan" color_code="#0f172a" size="Tiêu chuẩn" stock="30"/>
+      <variant sku="SP11-2-1" color="Bạc" color_code="#94a3b8" size="Tiêu chuẩn" stock="9"/>
+    </variants>
+  </product>
+  <product id="12">
+    <id>12</id>
+    <title>WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive</title>
+    <price>114</price>
+    <description>Expand your PS4 gaming experience, Play anywhere Fast and easy, setup Sleek design with high capacity, 3-year manufacturer's limited warranty</description>
+    <category>electronics</category>
+    <image>https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_t.png</image>
+    <rating>
+      <rate>4.8</rate>
+      <count>400</count>
+    </rating>
+    <brand>SanDisk</brand>
+    <discount>0</discount>
+    <import_date>2026-07-25</import_date>
+    <colors>
+      <color code="#0f172a">Đen Titan</color>
+      <color code="#94a3b8">Bạc</color>
+      <color code="#2563eb">Xanh Dương</color>
+    </colors>
+    <sizes>
+      <size>Tiêu chuẩn</size>
+    </sizes>
+    <stock>48</stock>
+    <variants>
+      <variant sku="SP12-1-1" color="Đen Titan" color_code="#0f172a" size="Tiêu chuẩn" stock="11"/>
+      <variant sku="SP12-2-1" color="Bạc" color_code="#94a3b8" size="Tiêu chuẩn" stock="16"/>
+      <variant sku="SP12-3-1" color="Xanh Dương" color_code="#2563eb" size="Tiêu chuẩn" stock="21"/>
+    </variants>
+  </product>
+  <product id="13">
+    <id>13</id>
+    <title>Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin</title>
+    <price>599</price>
+    <description>21.5 inches Full HD (1920 x 1080) widescreen IPS display And Radeon free Sync technology. No compatibility for VESA Mount Refresh Rate: 75Hz</description>
+    <category>electronics</category>
+    <image>https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_t.png</image>
+    <rating>
+      <rate>2.9</rate>
+      <count>250</count>
+    </rating>
+    <brand>Silicon Power</brand>
+    <discount>15</discount>
+    <import_date>2026-08-02</import_date>
+    <colors>
+      <color code="#0f172a">Đen Titan</color>
+      <color code="#94a3b8">Bạc</color>
+    </colors>
+    <sizes>
+      <size>Tiêu chuẩn</size>
+    </sizes>
+    <stock>41</stock>
+    <variants>
+      <variant sku="SP13-1-1" color="Đen Titan" color_code="#0f172a" size="Tiêu chuẩn" stock="18"/>
+      <variant sku="SP13-2-1" color="Bạc" color_code="#94a3b8" size="Tiêu chuẩn" stock="23"/>
+    </variants>
+  </product>
+  <product id="14">
+    <id>14</id>
+    <title>Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED</title>
+    <price>999.99</price>
+    <description>49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration</description>
+    <category>electronics</category>
+    <image>https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_t.png</image>
+    <rating>
+      <rate>2.2</rate>
+      <count>140</count>
+    </rating>
+    <brand>Acer</brand>
+    <discount>0</discount>
+    <import_date>2026-09-04</import_date>
+    <colors>
+      <color code="#0f172a">Đen Titan</color>
+      <color code="#94a3b8">Bạc</color>
+      <color code="#2563eb">Xanh Dương</color>
+    </colors>
+    <sizes>
+      <size>Tiêu chuẩn</size>
+    </sizes>
+    <stock>64</stock>
+    <variants>
+      <variant sku="SP14-1-1" color="Đen Titan" color_code="#0f172a" size="Tiêu chuẩn" stock="25"/>
+      <variant sku="SP14-2-1" color="Bạc" color_code="#94a3b8" size="Tiêu chuẩn" stock="30"/>
+      <variant sku="SP14-3-1" color="Xanh Dương" color_code="#2563eb" size="Tiêu chuẩn" stock="9"/>
+    </variants>
+  </product>
+  <product id="15">
+    <id>15</id>
+    <title>BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats</title>
+    <price>56.99</price>
+    <description>Note:The Jackets is US standard size, Please choose size as your usual wear Material: 100% Polyester; Detachable Liner Fabric: Warm Fleece.</description>
+    <category>women's clothing</category>
+    <image>https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_t.png</image>
+    <rating>
+      <rate>2.6</rate>
+      <count>235</count>
+    </rating>
+    <brand>Mango</brand>
+    <discount>15</discount>
+    <import_date>2026-07-06</import_date>
+    <colors>
+      <color code="#991b1b">Đỏ đô</color>
+      <color code="#1e293b">Đen</color>
+    </colors>
+    <sizes>
+      <size>S</size>
+      <size>M</size>
+      <size>L</size>
+    </sizes>
+    <stock>87</stock>
+    <variants>
+      <variant sku="SP15-1-1" color="Đỏ đô" color_code="#991b1b" size="S" stock="6"/>
+      <variant sku="SP15-1-2" color="Đỏ đô" color_code="#991b1b" size="M" stock="9"/>
+      <variant sku="SP15-1-3" color="Đỏ đô" color_code="#991b1b" size="L" stock="12"/>
+      <variant sku="SP15-2-1" color="Đen" color_code="#1e293b" size="S" stock="17"/>
+      <variant sku="SP15-2-2" color="Đen" color_code="#1e293b" size="M" stock="20"/>
+      <variant sku="SP15-2-3" color="Đen" color_code="#1e293b" size="L" stock="23"/>
+    </variants>
+  </product>
+  <product id="16">
+    <id>16</id>
+    <title>Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket</title>
+    <price>29.95</price>
+    <description>100% POLYURETHANE(shell) 100% POLYESTER(lining) 75% POLYESTER 25% COTTON (SWEATER), Faux leather material for style and comfort</description>
+    <category>women's clothing</category>
+    <image>https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_t.png</image>
+    <rating>
+      <rate>2.9</rate>
+      <count>340</count>
+    </rating>
+    <brand>Elise</brand>
+    <discount>0</discount>
+    <import_date>2026-08-08</import_date>
+    <colors>
+      <color code="#991b1b">Đỏ đô</color>
+      <color code="#1e293b">Đen</color>
+      <color code="#fef3c7">Kem</color>
+    </colors>
+    <sizes>
+      <size>S</size>
+      <size>M</size>
+      <size>L</size>
+    </sizes>
+    <stock>189</stock>
+    <variants>
+      <variant sku="SP16-1-1" color="Đỏ đô" color_code="#991b1b" size="S" stock="13"/>
+      <variant sku="SP16-1-2" color="Đỏ đô" color_code="#991b1b" size="M" stock="16"/>
+      <variant sku="SP16-1-3" color="Đỏ đô" color_code="#991b1b" size="L" stock="19"/>
+      <variant sku="SP16-2-1" color="Đen" color_code="#1e293b" size="S" stock="18"/>
+      <variant sku="SP16-2-2" color="Đen" color_code="#1e293b" size="M" stock="21"/>
+      <variant sku="SP16-2-3" color="Đen" color_code="#1e293b" size="L" stock="24"/>
+      <variant sku="SP16-3-1" color="Kem" color_code="#fef3c7" size="S" stock="23"/>
+      <variant sku="SP16-3-2" color="Kem" color_code="#fef3c7" size="M" stock="26"/>
+      <variant sku="SP16-3-3" color="Kem" color_code="#fef3c7" size="L" stock="29"/>
+    </variants>
+  </product>
+  <product id="17">
+    <id>17</id>
+    <title>Rain Jacket Women Windbreaker Striped Climbing Raincoats</title>
+    <price>39.99</price>
+    <description>Lightweight perfet for trip or casual wear---Long sleeve with hooded, adjustable drawstring waist design. Button and zipper front closure raincoat.</description>
+    <category>women's clothing</category>
+    <image>https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2t.png</image>
+    <rating>
+      <rate>3.8</rate>
+      <count>679</count>
+    </rating>
+    <brand>Zara</brand>
+    <discount>15</discount>
+    <import_date>2026-09-10</import_date>
+    <colors>
+      <color code="#991b1b">Đỏ đô</color>
+      <color code="#1e293b">Đen</color>
+    </colors>
+    <sizes>
+      <size>S</size>
+      <size>M</size>
+      <size>L</size>
+    </sizes>
+    <stock>129</stock>
+    <variants>
+      <variant sku="SP17-1-1" color="Đỏ đô" color_code="#991b1b" size="S" stock="20"/>
+      <variant sku="SP17-1-2" color="Đỏ đô" color_code="#991b1b" size="M" stock="23"/>
+      <variant sku="SP17-1-3" color="Đỏ đô" color_code="#991b1b" size="L" stock="26"/>
+      <variant sku="SP17-2-1" color="Đen" color_code="#1e293b" size="S" stock="25"/>
+      <variant sku="SP17-2-2" color="Đen" color_code="#1e293b" size="M" stock="28"/>
+      <variant sku="SP17-2-3" color="Đen" color_code="#1e293b" size="L" stock="7"/>
+    </variants>
+  </product>
+  <product id="18">
+    <id>18</id>
+    <title>MBJ Women's Solid Short Sleeve Boat Neck V</title>
+    <price>9.85</price>
+    <description>95% RAYON 5% SPANDEX, Made in USA or Imported, Do Not Bleach, Lightweight fabric with great stretch for comfort, Ribbed on sleeves and neckline</description>
+    <category>women's clothing</category>
+    <image>https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_t.png</image>
+    <rating>
+      <rate>4.7</rate>
+      <count>130</count>
+    </rating>
+    <brand>H&amp;M</brand>
+    <discount>0</discount>
+    <import_date>2026-07-12</import_date>
+    <colors>
+      <color code="#991b1b">Đỏ đô</color>
+      <color code="#1e293b">Đen</color>
+      <color code="#fef3c7">Kem</color>
+    </colors>
+    <sizes>
+      <size>S</size>
+      <size>M</size>
+      <size>L</size>
+    </sizes>
+    <stock>135</stock>
+    <variants>
+      <variant sku="SP18-1-1" color="Đỏ đô" color_code="#991b1b" size="S" stock="27"/>
+      <variant sku="SP18-1-2" color="Đỏ đô" color_code="#991b1b" size="M" stock="30"/>
+      <variant sku="SP18-1-3" color="Đỏ đô" color_code="#991b1b" size="L" stock="7"/>
+      <variant sku="SP18-2-1" color="Đen" color_code="#1e293b" size="S" stock="6"/>
+      <variant sku="SP18-2-2" color="Đen" color_code="#1e293b" size="M" stock="9"/>
+      <variant sku="SP18-2-3" color="Đen" color_code="#1e293b" size="L" stock="12"/>
+      <variant sku="SP18-3-1" color="Kem" color_code="#fef3c7" size="S" stock="11"/>
+      <variant sku="SP18-3-2" color="Kem" color_code="#fef3c7" size="M" stock="14"/>
+      <variant sku="SP18-3-3" color="Kem" color_code="#fef3c7" size="L" stock="19"/>
+    </variants>
+  </product>
+  <product id="19">
+    <id>19</id>
+    <title>Opna Women's Short Sleeve Moisture</title>
+    <price>7.95</price>
+    <description>100% Polyester, Machine wash, 100% cationic polyester interlock, Machine Wash &amp; Pre Shrunk for a Great Fit, Lightweight, roomy and highly breathable</description>
+    <category>women's clothing</category>
+    <image>https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_t.png</image>
+    <rating>
+      <rate>4.5</rate>
+      <count>146</count>
+    </rating>
+    <brand>Mango</brand>
+    <discount>15</discount>
+    <import_date>2026-08-14</import_date>
+    <colors>
+      <color code="#991b1b">Đỏ đô</color>
+      <color code="#1e293b">Đen</color>
+    </colors>
+    <sizes>
+      <size>S</size>
+      <size>M</size>
+      <size>L</size>
+    </sizes>
+    <stock>81</stock>
+    <variants>
+      <variant sku="SP19-1-1" color="Đỏ đô" color_code="#991b1b" size="S" stock="8"/>
+      <variant sku="SP19-1-2" color="Đỏ đô" color_code="#991b1b" size="M" stock="11"/>
+      <variant sku="SP19-1-3" color="Đỏ đô" color_code="#991b1b" size="L" stock="14"/>
+      <variant sku="SP19-2-1" color="Đen" color_code="#1e293b" size="S" stock="13"/>
+      <variant sku="SP19-2-2" color="Đen" color_code="#1e293b" size="M" stock="16"/>
+      <variant sku="SP19-2-3" color="Đen" color_code="#1e293b" size="L" stock="19"/>
+    </variants>
+  </product>
+  <product id="20">
+    <id>20</id>
+    <title>DANVOUY Womens T Shirt Casual Cotton Short</title>
+    <price>12.99</price>
+    <description>95%Cotton,5%Spandex, Features: Casual, Short Sleeve, Letter Print,V-Neck,Fashion Tees, The fabric is soft and has some stretch.</description>
+    <category>women's clothing</category>
+    <image>https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_t.png</image>
+    <rating>
+      <rate>3.6</rate>
+      <count>145</count>
+    </rating>
+    <brand>Elise</brand>
+    <discount>0</discount>
+    <import_date>2026-09-16</import_date>
+    <colors>
+      <color code="#991b1b">Đỏ đô</color>
+      <color code="#1e293b">Đen</color>
+      <color code="#fef3c7">Kem</color>
+    </colors>
+    <sizes>
+      <size>S</size>
+      <size>M</size>
+      <size>L</size>
+    </sizes>
+    <stock>198</stock>
+    <variants>
+      <variant sku="SP20-1-1" color="Đỏ đô" color_code="#991b1b" size="S" stock="15"/>
+      <variant sku="SP20-1-2" color="Đỏ đô" color_code="#991b1b" size="M" stock="18"/>
+      <variant sku="SP20-1-3" color="Đỏ đô" color_code="#991b1b" size="L" stock="21"/>
+      <variant sku="SP20-2-1" color="Đen" color_code="#1e293b" size="S" stock="20"/>
+      <variant sku="SP20-2-2" color="Đen" color_code="#1e293b" size="M" stock="23"/>
+      <variant sku="SP20-2-3" color="Đen" color_code="#1e293b" size="L" stock="26"/>
+      <variant sku="SP20-3-1" color="Kem" color_code="#fef3c7" size="S" stock="25"/>
+      <variant sku="SP20-3-2" color="Kem" color_code="#fef3c7" size="M" stock="28"/>
+      <variant sku="SP20-3-3" color="Kem" color_code="#fef3c7" size="L" stock="22"/>
+    </variants>
+  </product>
+</products>

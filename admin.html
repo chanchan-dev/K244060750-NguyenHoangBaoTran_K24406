@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Quản Trị Hệ Thống UEL Store</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <div class="admin-layout">
+        <!-- SIDEBAR TRÁI (CÂU 8) -->
+        <aside class="admin-sidebar" aria-label="Menu điều khiển quản trị">
+            <div class="sidebar-header">
+                <div class="logo-box">U</div>
+                <span>UEL Store Admin</span>
+            </div>
+
+            <ul class="sidebar-menu">
+                <li class="sidebar-item active">
+                    <a href="#dashboardSection">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="7" height="7"></rect>
+                            <rect x="14" y="3" width="7" height="7"></rect>
+                            <rect x="14" y="14" width="7" height="7"></rect>
+                            <rect x="3" y="14" width="7" height="7"></rect>
+                        </svg>
+                        <span>Dashboard Thống Kê</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#ordersSection">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                        </svg>
+                        <span>Quản Lý Đơn Hàng</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#productsStockSection">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                        </svg>
+                        <span>Thống Kê Sản Phẩm</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="index.html" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                        <span>Xem Cửa Hàng (Shop)</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <button type="button" id="btnLogoutAdmin" class="btn-sidebar-logout">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                        <polyline points="16 17 21 12 16 7"></polyline>
+                        <line x1="21" y1="12" x2="9" y2="12"></line>
+                    </svg>
+                    Đăng Xuất
+                </button>
+            </div>
+        </aside>
+
+        <!-- KHU VỰC NỘI DUNG CHÍNH (MAIN) -->
+        <main class="admin-main">
+            <!-- TOPBAR HEADER -->
+            <header class="admin-topbar">
+                <div class="topbar-title">
+                    <h1>Hệ Thống Quản Trị Bán Hàng</h1>
+                    <p>Dữ liệu hợp nhất từ XML Database &amp; LocalStorage giao dịch trực tuyến</p>
+                </div>
+
+                <div class="topbar-user">
+                    <div style="text-align: right;">
+                        <div id="adminUserName" style="font-weight: 700; color: var(--secondary);">Đang nạp...</div>
+                        <div style="margin-top: 2px;">
+                            <span id="adminUserRole" class="user-badge-role role-admin">ADMIN</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="admin-content">
+                <!-- ==========================================
+                     PHẦN 1: THẺ KPI METRICS (CÂU 8)
+                     ========================================== -->
+                <section id="dashboardSection" class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-icon-box" style="background:#eff6ff; color:#2563eb;">📦</div>
+                        <div class="metric-info">
+                            <span class="metric-label">Tổng đơn hàng</span>
+                            <span id="metricTotalOrders" class="metric-value">0</span>
+                            <span class="metric-sub">Hợp nhất XML + Web Order</span>
+                        </div>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-icon-box" style="background:#f0fdf4; color:#16a34a;">💰</div>
+                        <div class="metric-info">
+                            <span class="metric-label">Tổng doanh thu</span>
+                            <span id="metricTotalRevenue" class="metric-value">$0.00</span>
+                            <span class="metric-sub">Không tính các đơn bị hủy</span>
+                        </div>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-icon-box" style="background:#fefce8; color:#ca8a04;">👥</div>
+                        <div class="metric-info">
+                            <span class="metric-label">Tổng khách hàng</span>
+                            <span id="metricTotalCustomers" class="metric-value">0</span>
+                            <span class="metric-sub">Từ data/customers.json</span>
+                        </div>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-icon-box" style="background:#f5f3ff; color:#7c3aed;">📊</div>
+                        <div class="metric-info">
+                            <span class="metric-label">Phân bố đơn hàng</span>
+                            <span id="metricStatusBreakdown" style="font-size: 0.85rem; font-weight:700; color:var(--secondary); margin-top:4px;">
+                                Chờ: 0 | Đã TT: 0 | Đã giao: 0 | Hủy: 0
+                            </span>
+                            <span class="metric-sub">Theo trạng thái giao dịch</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ==========================================
+                     PHẦN 2: BIỂU ĐỒ DOANH THU & TOP BÁN CHẠY (CÂU 8)
+                     ========================================== -->
+                <section class="analytics-grid-2">
+                    <!-- BIỂU ĐỒ CỘT DOANH THU CSS/SVG THUẦN (KHÔNG THƯ VIỆN) -->
+                    <div class="chart-panel">
+                        <div class="panel-title-wrap">
+                            <h3>📈 Doanh Thu Theo Tháng (Biểu đồ cột CSS Thuần)</h3>
+                            <span class="badge" style="background:#dbeafe; color:#1e40af;">4 Tháng gần nhất</span>
+                        </div>
+                        <div id="monthlyRevenueChart" class="bar-chart-container">
+                            <!-- Render bằng JS CSS Bar Chart -->
+                        </div>
+                    </div>
+
+                    <!-- TOP 5 SẢN PHẨM BÁN CHẠY NHẤT -->
+                    <div class="chart-panel">
+                        <div class="panel-title-wrap">
+                            <h3>🔥 Top 5 Sản Phẩm Bán Chạy Nhất</h3>
+                            <span class="badge" style="background:#fee2e2; color:#991b1b;">Xếp hạng số lượng</span>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="admin-table">
+                                <thead>
+                                    <tr>
+                                        <th>Hạng</th>
+                                        <th>Sản phẩm</th>
+                                        <th>Đã bán</th>
+                                        <th>Doanh thu</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="topSellingProductsBody">
+                                    <tr><td colspan="4">Đang tính toán số liệu...</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ==========================================
+                     PHẦN 3: QUẢN LÝ ĐƠN HÀNG HỢP NHẤT (CÂU 8)
+                     ========================================== -->
+                <section id="ordersSection" class="table-panel">
+                    <div class="table-toolbar">
+                        <div>
+                            <h3 style="font-size:1.1rem; font-weight:700; color:var(--secondary);">
+                                📑 Quản Lý Đơn Hàng (<span id="ordersTableCount">0 đơn hàng</span>)
+                            </h3>
+                            <p style="font-size:0.82rem; color:var(--text-muted);">
+                                Bao gồm đơn hàng từ <code>data/carts.xml</code> và đơn đặt mới trên Web lưu trong <code>localStorage["orders"]</code>
+                            </p>
+                        </div>
+
+                        <!-- BỘ LỌC TÌM KIẾM ĐƠN HÀNG -->
+                        <div class="toolbar-filters">
+                            <input 
+                                type="search" 
+                                id="searchOrderKeyword" 
+                                class="form-control" 
+                                placeholder="Tìm mã đơn, tên khách..." 
+                                style="width: 200px; padding: 7px 10px; font-size: 0.85rem;"
+                            />
+                            <select id="filterOrderStatus" class="form-control" style="width: 140px; padding: 7px 10px; font-size: 0.85rem;">
+                                <option value="">Tất cả trạng thái</option>
+                                <option value="pending">Chờ xử lý (Pending)</option>
+                                <option value="paid">Đã thanh toán (Paid)</option>
+                                <option value="shipped">Đã giao hàng (Shipped)</option>
+                                <option value="cancelled">Đã hủy đơn (Cancelled)</option>
+                            </select>
+                            <input 
+                                type="date" 
+                                id="filterOrderDateFrom" 
+                                class="form-control" 
+                                title="Từ ngày"
+                                style="width: 135px; padding: 7px 10px; font-size: 0.85rem;"
+                            />
+                            <input 
+                                type="date" 
+                                id="filterOrderDateTo" 
+                                class="form-control" 
+                                title="Đến ngày"
+                                style="width: 135px; padding: 7px 10px; font-size: 0.85rem;"
+                            />
+                            <button type="button" id="btnResetOrderFilter" class="btn btn-secondary" style="padding: 7px 12px; font-size: 0.85rem;">
+                                Làm mới
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>Mã đơn</th>
+                                    <th>Ngày tạo</th>
+                                    <th>Khách hàng</th>
+                                    <th>Phụ trách</th>
+                                    <th>Tổng tiền</th>
+                                    <th>Trạng thái</th>
+                                    <th>Đổi trạng thái</th>
+                                    <th>Thao tác</th>
+                                </tr>
+                            </thead>
+                            <tbody id="ordersTableBody">
+                                <tr><td colspan="8" style="text-align:center; padding:24px;">Đang tải danh sách đơn hàng...</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- ==========================================
+                     PHẦN 4: THỐNG KÊ SẢN PHẨM ĐÃ BÁN & TỒN KHO (CÂU 8)
+                     ========================================== -->
+                <section id="productsStockSection" class="table-panel">
+                    <div class="table-toolbar">
+                        <div>
+                            <h3 style="font-size:1.1rem; font-weight:700; color:var(--secondary);">
+                                📦 Thống Kê Sản Phẩm Đã Bán &amp; Tồn Kho Còn Lại
+                            </h3>
+                            <p style="font-size:0.82rem; color:var(--text-muted);">
+                                Dữ liệu tồn kho được tổng hợp theo các biến thể sản phẩm
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Tên sản phẩm</th>
+                                    <th>Danh mục</th>
+                                    <th>Đơn giá</th>
+                                    <th>Đã bán</th>
+                                    <th>Tổng doanh thu</th>
+                                    <th>Tồn kho</th>
+                                </tr>
+                            </thead>
+                            <tbody id="productsStockTableBody">
+                                <tr><td colspan="7" style="text-align:center; padding:24px;">Đang tải dữ liệu sản phẩm...</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+
+            <!-- FOOTER BẮT BUỘC: HỌ TÊN + MSSV (CÂU 8) -->
+            <footer class="admin-footer">
+                <p>Sinh viên thực hiện: <strong>Nguyễn Hoàng Bảo Trân</strong> | MSSV: <strong>K244060750</strong> | Bài tập thực hành Phát triển Ứng dụng Web (Câu 8: Dashboard Quản Trị)</p>
+            </footer>
+        </main>
+    </div>
+
+    <!-- SCRIPT KHỞI CHẠY ADMIN DASHBOARD -->
+    <script type="module">
+        import { initAdminDashboard } from "./assets/js/admin.js";
+        document.addEventListener("DOMContentLoaded", initAdminDashboard);
+    </script>
+</body>
+</html>

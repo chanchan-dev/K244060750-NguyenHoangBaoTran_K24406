@@ -1,0 +1,102 @@
+[
+  {
+    "id": "CUS01",
+    "username": "khachhang01",
+    "password": "123",
+    "fullName": "Nguyễn Văn An",
+    "email": "nguyenvanan@gmail.com",
+    "phone": "0903111222",
+    "address": "123 Lê Lợi, Phường Bến Nghé, Quận 1, TP.HCM",
+    "registerDate": "2026-05-10"
+  },
+  {
+    "id": "CUS02",
+    "username": "khachhang02",
+    "password": "123",
+    "fullName": "Trần Thị Bích Ngọc",
+    "email": "bichngoc.tran@gmail.com",
+    "phone": "0914222333",
+    "address": "45 Nguyễn Huệ, Phường Bến Nghé, Quận 1, TP.HCM",
+    "registerDate": "2026-05-18"
+  },
+  {
+    "id": "CUS03",
+    "username": "khachhang03",
+    "password": "123",
+    "fullName": "Lê Hoàng Phúc",
+    "email": "hoangphuc.le@yahoo.com",
+    "phone": "0988333444",
+    "address": "669 Quốc lộ 1, Khu phố 3, Thủ Đức, TP.HCM",
+    "registerDate": "2026-06-02"
+  },
+  {
+    "id": "CUS04",
+    "username": "khachhang04",
+    "password": "123",
+    "fullName": "Phạm Mai Phương",
+    "email": "maiphuong.pham@outlook.com",
+    "phone": "0939444555",
+    "address": "28 Võ Văn Ngân, Phường Linh Chiểu, Thủ Đức, TP.HCM",
+    "registerDate": "2026-06-15"
+  },
+  {
+    "id": "CUS05",
+    "username": "khachhang05",
+    "password": "123",
+    "fullName": "Hoàng Gia Bảo",
+    "email": "giabao.hoang@gmail.com",
+    "phone": "0972555666",
+    "address": "190 Điện Biên Phủ, Quận Bình Thạnh, TP.HCM",
+    "registerDate": "2026-07-01"
+  },
+  {
+    "id": "CUS06",
+    "username": "khachhang06",
+    "password": "123",
+    "fullName": "Đặng Thảo Vy",
+    "email": "thaovy.dang@gmail.com",
+    "phone": "0356667778",
+    "address": "82 Nguyễn Văn Cừ, Quận 5, TP.HCM",
+    "registerDate": "2026-07-20"
+  },
+  {
+    "id": "CUS07",
+    "username": "khachhang07",
+    "password": "123",
+    "fullName": "Vũ Quốc Khánh",
+    "email": "quockhanh.vu@gmail.com",
+    "phone": "0797778889",
+    "address": "15 Cộng Hòa, Phường 4, Quận Tân Bình, TP.HCM",
+    "registerDate": "2026-08-05"
+  },
+  {
+    "id": "CUS08",
+    "username": "khachhang08",
+    "password": "123",
+    "fullName": "Bùi Thanh Trúc",
+    "email": "thanhtruc.bui@gmail.com",
+    "phone": "0868889990",
+    "address": "302 Hai Bà Trưng, Quận 3, TP.HCM",
+    "registerDate": "2026-08-19"
+  },
+  {
+    "id": "CUS09",
+    "username": "khachhang09",
+    "password": "123",
+    "fullName": "Đỗ Minh Tuấn",
+    "email": "minhtuan.do@gmail.com",
+    "phone": "0589990001",
+    "address": "50 Phan Xích Long, Quận Phú Nhuận, TP.HCM",
+    "registerDate": "2026-09-02"
+  },
+  {
+    "id": "CUS10",
+    "username": "khachhang10",
+    "password": "123",
+    "fullName": "Ngô Khánh Linh",
+    "email": "khanhlinh.ngo@gmail.com",
+    "phone": "0941001122",
+    "address": "108 Nguyễn Thị Minh Khai, Quận 3, TP.HCM",
+    "registerDate": "2026-09-14"
+  }
+]
